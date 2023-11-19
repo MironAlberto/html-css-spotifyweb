@@ -166,3 +166,162 @@ aside .aside-bottom hr{
 aside .aside-bottom .user > div:first-child{
     margin-right: 10px;
 }
+
+
+/* MAIN */
+main{
+    width: calc(100% - 220px);
+    height: 100%;
+    background-color: #141922;
+    z-index: 0;
+}
+
+header{
+    height: 100px;
+    width: calc(100% - 220px);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header .plan{
+    display: flex;
+    justify-content: right;
+}
+
+header .plan button{
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px;
+}
+
+header .plan button:hover{
+    padding: 15px 40px;
+}
+
+.music-content{
+    height: 100%;
+    overflow: auto;
+    padding: 120px 30px;
+}
+
+.music-content nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music-content nav ul li{
+    margin: 0 20px;
+}
+
+.music-content nav ul li a{
+    color: #797B80;
+}
+
+.music-content nav ul li a:hover{
+    color: white;
+}
+
+.music-content .my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.music-content h2{
+    padding-top: 30px;
+    color: white;
+}
+
+.music-content .my-row .card{
+    width: calc((100% / 6) - 20px);
+    padding: 25px 0;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.music-content .my-row .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.music-content .my-row .card .img-box{
+    position: relative;
+
+}
+
+.music-content .my-row .card .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.music-content .my-row .card .overlay .pause,
+.music-content .my-row .card .special-overlay .pause{
+    color: white;
+}
+
+.music-content .my-row .card .img-box:hover .overlay{
+    opacity: 1;
+}
+
+.music-content .my-row .card h3:hover,
+.music-content .my-row .card > p:hover{
+    text-decoration: underline;
+}
+
+.music-content .my-row .card h3{
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.music-content .my-row .card > p{
+    color:#5A5A5A;
+}
+
+#speciale{
+    color:#5A5A5A;
+    padding: 15px 0;
+}
+
+#squared-img img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.music-content .my-row .card .special-overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.music-content .my-row .card .img-box:hover .special-overlay{
+    opacity: 1;
+}
