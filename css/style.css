@@ -486,3 +486,177 @@ footer .track-bar-music .play-music .volume-bar-100 .volume-bar-20{
 footer .track-bar-music .track-commands i:nth-child(3):hover{
     color: lightgreen;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Small Desktop */
+@media screen and (max-width: 1100px){
+
+    .music-content .my-row .card{
+        width: calc((100% / 4) - 20px);
+    }
+
+    footer .volume .volume-icons {
+        width: 50%;
+    }
+
+    .music-content nav ul li{
+        margin: 20px;
+    }
+
+    header .plan button{
+        margin: 30px 20px;
+    }
+
+    footer .track-bar-music .play-music .volume-bar-100{
+        width: 200px;
+    }
+
+    footer .volume .settings-box .volume-bar-100{
+        width: 100px;
+    }
+
+    footer .song-box .song-image img{
+        width: 70%;
+        object-fit: cover;
+    }
+}
+
+
+/* Tablet */
+@media screen and (max-height: 700px){
+
+    aside .playlists > .overflow-p{
+        overflow-y: auto;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    aside{
+        width: 180px;
+    }
+
+    main,
+    header{
+        width: calc(100% - 180px);
+    }
+
+    .music-content .my-row .card{
+        width: calc((100% / 2) - 20px);
+    }
+
+    .music-content nav ul li{
+        margin: 20px 10px;
+    }
+
+    header .plan button{
+        margin: 30px 10px;
+    }
+
+    footer{
+        font-size: smaller;
+    }
+
+    footer .track-bar-music .play-music .volume-bar-100{
+        width: 100px;
+    }
+
+    footer .track-bar-music .play-music .volume-bar-100 .volume-bar-20{
+        width: 40px;
+    }
+
+    footer .volume .settings-box .volume-bar-100{
+        width: 50px;
+    }
+
+    footer .volume .settings-box .volume-bar-100 .volume-bar-20{
+        width: 20px;
+    }
+
+    footer .song-box .song-infos .like-and-save{
+        padding-left: 25px;
+    }
+    
+    footer .song-box .song-infos .like-and-save span{
+        color: #5A5A5A;
+        padding-left: 1px;
+    }
+
+    footer .song-box .song-infos .like-and-save span{
+        margin-right: 1px;
+    }
+    
+    footer .volume .volume-icons {
+        width: 80%;
+    }
+
+    footer .song-box .song-infos .like-and-save br{
+        display: block;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 600px){
+
+    aside{
+        width: 60px;
+    }
+
+    aside .aside-top .logo{
+        display: none;
+    }
+
+    aside .aside-top .menu .home span,
+    aside .aside-top .menu .search span,
+    aside .aside-top .menu .library span{
+        display: none;
+    }
+
+    aside .aside-top .playlists{
+        display: none;
+    }
+
+    aside .aside-bottom .install span,
+    aside .aside-bottom .user span,
+    aside .aside-bottom span hr{
+        display: none;
+    }
+
+    aside .mini-logo img{
+        display: block;
+    }
+
+    aside .aside-bottom .install .arrow-down-square{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        
+        flex-shrink: 0;
+    }
+
+    main,
+    header{
+        width: calc(100% - 60px);
+    }
+
+    .music-content nav ul li{
+        margin: 20px 7px;
+    }
+
+    footer .volume .volume-icons {
+        width: 100%;
+    }
+
+    footer .track-bar-music .play-music .volume-bar-100 .volume-bar-20{
+        width: 20px;
+    }
+
+    footer .volume .settings-box .volume-bar-100 .volume-bar-20{
+        width: 10px;
+    }
+}
